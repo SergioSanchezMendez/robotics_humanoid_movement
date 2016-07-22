@@ -1,0 +1,332 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML"><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Journal of the Brazilian Society of Mechanical Sciences and Engineering - An integrated control for a biped walking robot</title><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT"><meta content-math-type="text/mathml"><link rel="stylesheet" type="text/css" href="scielo.php_files/screen.css"><link xmlns:util="http://dtd.nlm.nih.gov/xsl/util" xmlns="" rel="stylesheet" type="text/css" href="scielo.php_files/ViewNLM.css"><link xmlns:util="http://dtd.nlm.nih.gov/xsl/util" xmlns="" rel="stylesheet" type="text/css" href="scielo.php_files/ViewScielo.css"><script language="javascript" src="scielo.php_files/httpAjaxHandler.js"></script><script language="javascript" src="scielo.php_files/article.js"></script></head><body><div class="container"><div class="top"><div id="issues"></div><table xmlns="" border="0" cellpadding="7" cellspacing="0" width="100%"><tbody><tr><td valign="top" width="26%"><p align="center"><a href="http://www.scielo.br/scielo.php?lng=en"><img src="scielo.php_files/fbpelogp.gif" alt="Scientific Electronic Library Online" border="0"></a><br></p></td><td valign="top" width="74%"><table><tbody><tr><td nowrap="nowrap"><img src="scielo.php_files/grp1c.gif">&nbsp;<img src="scielo.php_files/artsrc.gif"><br><a href="http://www.scielo.br/scielo.php?script=sci_issuetoc&amp;pid=1678-587820060004&amp;lng=en&amp;nrm=iso"><img src="scielo.php_files/toc.gif" alt="vol.28&nbsp;no.4" border="0"></a><a href="http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S1678-58782006000400009&amp;lng=en&amp;nrm=iso"><img src="scielo.php_files/prev.gif" alt="Modified Lyapunov equations for LTI descriptor systems" border="0"></a><a href="http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S1678-58782006000400011&amp;lng=en&amp;nrm=iso"><img src="scielo.php_files/next.gif" alt="Comparison of some mechanical models of larynx in the synthesis of voiced sounds" border="0"></a>&nbsp;<a href="http://www.scielo.br/cgi-bin/wxis.exe/iah/?IsisScript=iah/iah.xis&amp;base=article%5Edjbsmse&amp;index=AU&amp;format=iso.pft&amp;lang=i&amp;limit=1678-5878"><img src="scielo.php_files/author.gif" alt="author index" border="0"></a><a href="http://www.scielo.br/cgi-bin/wxis.exe/iah/?IsisScript=iah/iah.xis&amp;base=article%5Edjbsmse&amp;index=KW&amp;format=iso.pft&amp;lang=i&amp;limit=1678-5878"><img src="scielo.php_files/subject.gif" alt="subject index" border="0"></a><a href="http://www.scielo.br/cgi-bin/wxis.exe/iah/?IsisScript=iah/iah.xis&amp;base=article%5Edjbsmse&amp;format=iso.pft&amp;lang=i&amp;limit=1678-5878"><img src="scielo.php_files/search.gif" alt="search form" border="0"></a></td><td valign="bottom" nowrap="nowrap"><a href="http://www.scielo.br/scielo.php?script=sci_serial&amp;pid=1678-5878&amp;lng=en&amp;nrm=iso"><img src="scielo.php_files/home.gif" alt="Home Page" border="0"></a><a href="http://www.scielo.br/scielo.php?script=sci_alphabetic&amp;lng=en&amp;nrm=iso"><img src="scielo.php_files/alpha.gif" alt="alphabetic serial listing" border="0"></a>
+             &nbsp;
+            </td></tr></tbody></table></td></tr></tbody></table><br xmlns=""></div><div class="content"><div xmlns="" id="toolBox"><h2 id="toolsSection">Services</h2><form name="addToShelf" method="post" action="http://www.scielo.org/applications/scielo-org/services/addArticleToShelf.php" target="mensagem"><input name="PID" value="S1678-58782006000400010" type="hidden"><input name="url" value="http://www.scielo.br/applications/scielo-org/scielo.php?script=sci_arttext&amp;pid=S1678-58782006000400010&amp;lng=en&amp;nrm=iso&amp;tlng=en" type="hidden"></form><form name="citedAlert" method="post" action="http://www.scielo.org/applications/scielo-org/services/citedAlert.php" target="mensagem"><input name="PID" value="S1678-58782006000400010" type="hidden"><input name="url" value="http://www.scielo.br/applications/scielo-org/scielo.php?script=sci_arttext&amp;pid=S1678-58782006000400010&amp;lng=en&amp;nrm=iso&amp;tlng=en" type="hidden"></form><form name="accessAlert" method="post" action="http://www.scielo.org/applications/scielo-org/services/accessAlert.php" target="mensagem"><input name="PID" value="S1678-58782006000400010" type="hidden"><input name="url" value="http://www.scielo.br/applications/scielo-org/scielo.php?script=sci_arttext&amp;pid=S1678-58782006000400010&amp;lng=en&amp;nrm=iso&amp;tlng=en" type="hidden"></form><ul><li><a href="http://www.scielo.org/applications/scielo-org/sso/loginScielo.php?lang=en" onclick="callUpdateArticleLog('servicos_customizados');" rel="nofollow"><img src="scielo.php_files/iconLogin.gif">Custom services</a></li><li><a href="javascript:%20void(0);" onclick="setTimeout(&quot;window.open('http://www.scielo.br/scielo.php?script=sci_pdf&amp;pid=S1678-58782006000400010&amp;lng=en&amp;nrm=iso&amp;tlng=en ','_self')&quot;, 3000);"><img src="scielo.php_files/iconPDFDocument.gif">Article in PDF format</a></li><li><a href="http://www.scielo.br/scieloOrg/php/articleXML.php?pid=S1678-58782006000400010&amp;lang=en" rel="nofollow" target="xml" onclick="callUpdateArticleLog('artigo_em_formato_xml');"><img src="scielo.php_files/iconXMLDocument.gif">Article in XML  format</a></li><li><a href="javascript:%20void(0);" onclick="window.open('http://www.scielo.br/scieloOrg/php/reference.php?pid=S1678-58782006000400010&amp;caller=www.scielo.br&amp;lang=en','','width=640,height=480,resizable=yes,scrollbars=1,menubar=yes'); callUpdateArticleLog('referencias_do_artigo');" rel="nofollow"><img src="scielo.php_files/iconReferences.gif">Article references</a></li><li><script language="javascript"><!--
+		CreateWindowHeader ( "Curriculum ScienTI",
+                                                    "/img/en/lattescv.gif",
+                                                    "en"
+                                                  );
+			
+			
+	InsertAuthor("GONCALVES, JOAO B.", "http://lattes.cnpq.br/0317151693471121");
+
+	InsertAuthor("ZAMPIERI, DOUGLAS EDUARDO", "http://lattes.cnpq.br/1655951355148873");
+
+
+    		CreateWindowFooter();
+	// --></script><a href="javascript:void(0);" onmouseout="status='';" style="text-decoration: none;" rel="nofollow" onclick="OpenLattesWindow();
+callUpdateArticleLog('curriculum_scienTI');" onmouseover="status='Authors List'; return true;"><img src="scielo.php_files/lattescv-button.gif" align="middle" border="0">Curriculum ScienTI
+						</a></li><li><a href="javascript:void(0);" onmouseout="status='';" class="nomodel" style="text-decoration: none;" onclick="OpenArticleInfoWindow ( 640, 320,  &quot;http://www.scielo.br/scielo.php?script=sci_isoref&amp;pid=S1678-58782006000400010&amp;lng=en&amp;tlng=en&quot;);
+callUpdateArticleLog('como_citar_este_artigo');" rel="nofollow" onmouseover="status='How to cite this article'; return true;"><img src="scielo.php_files/fulltxt.gif" align="middle" border="0"></a><a href="javascript:void(0);" onmouseout="status='';" class="nomodel" style="text-decoration: none;" onclick="OpenArticleInfoWindow ( 640, 320,  &quot;http://www.scielo.br/scielo.php?script=sci_isoref&amp;pid=S1678-58782006000400010&amp;lng=en&amp;tlng=en&quot;);callUpdateArticleLog('como_citar_este_artigo');" rel="nofollow" onmouseover="status='How to cite this article'; return true;">How to cite this article</a></li><li><a href="javascript:void(0);" onclick="window.open('http://www.scielo.br/applications/scielo-org/pages/services/articleRequestGraphicPage.php?pid=S1678-58782006000400010&amp;caller=www.scielo.br&amp;lang=en','','width=640,height=480,resizable=yes,scrollbars=1,menubar=yes,');callUpdateArticleLog('access');" rel="nofollow"><img src="scielo.php_files/iconStatistics.gif">Requests</a></li><li><img src="scielo.php_files/iconCitedOff.jpg" alt="have no cited articles">Cited by 
+                SciELO
+        </li><li><a href="javascript:void(0);" onclick="window.open('http://www.scielo.br/scieloOrg/php/related.php?pid=S1678-58782006000400010&amp;lang=en','','width=640,height=480,resizable=yes,scrollbars=1,menubar=yes,');callUpdateArticleLog('related');" rel="nofollow"><img src="scielo.php_files/iconRelatedOn.gif" alt=" 3 article(s)">Similars in SciELO</a></li><li><a href="javascript:%20void(0);" onclick="window.open('http://www.scielo.br/scieloOrg/php/translate.php?pid=S1678-58782006000400010&amp;caller=www.scielo.br&amp;lang=en&amp;tlang=en','','width=640,height=480,resizable=yes,scrollbars=1,menubar=yes'); callUpdateArticleLog('referencias_do_artigo');" rel="nofollow"><img src="scielo.php_files/iconTranslation.gif">Automatic translation</a></li><li><a href="javascript:void(0);" onclick="window.open('http://www.scielo.br/applications/scielo-org/pages/services/sendMail.php?pid=S1678-58782006000400010&amp;caller=www.scielo.br&amp;lang=en','','width=640,height=480,resizable=yes,scrollbars=1,menubar=yes,');callUpdateArticleLog('send_mail');" rel="nofollow"><img src="scielo.php_files/iconEmail.jpg">Send this article by e-mail</a></li></ul></div><h2>Journal of the Brazilian Society of Mechanical Sciences and Engineering</h2><h2 id="printISSN"><font xmlns="" class="nomodel" color="#000080">Print&nbsp;ISSN&nbsp;1678-5878</font></h2><h3>J. Braz. Soc. Mech. Sci. &amp; Eng.&nbsp;vol.28&nbsp;no.4&nbsp;Rio de Janeiro&nbsp;Oct./Dec.&nbsp;2006</h3><h4 id="doi">
+	doi: 10.1590/S1678-58782006000400010&nbsp;
+						</h4> <p align="right"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>TECHNICAL    PAPERS</b></font></p>     <p>&nbsp;</p>     <p><font size="4" face="Verdana, Arial, Helvetica, sans-serif"><b>An integrated    control for a biped walking robot</b></font></p>     <p>&nbsp;</p>     <p>&nbsp;</p>     <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>João    B. Gonçalves<sup>I</sup>; Douglas Eduardo Zampieri<sup>II</sup></b></font></p>     <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><sup>I</sup><a href="mailto:jbgoncal@unitau.br">jbgoncal@unitau.br</a>    University of Taubate - UNITAU Department of Electrical Engineering, 12060-440    Taubaté, SP. Brazil    <br>   <sup>II</sup>Emeritus Member, ABCM <a href="mailto:douglas@fem.unicamp.br">douglas@fem.unicamp.br</a>    State University of Campinas - UNICAMP Faculty of Mechanical Engineering CP.    6122 13083-970 Campinas, SP. Brazil</font></p>      <p>&nbsp;</p>     <p>&nbsp;</p> <hr size="1" noshade="noshade">     <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>ABSTRACT</b></font></p>     <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The
+main objective of this work is to present and discuss some results of
+an integrated control system for a biped robot machine in the dynamic
+gait. We divided the integrated control system in two sub-systems: a
+control of the trajectories for the legs and the Automatic Generator of
+Trajectory. We designed the Automatic Generator of Trajectory by
+employing a neural network, which updates online the conditions of
+trajectory for the trunk, from the evolution of the gait, with the
+objective to reduce the magnitude of the resultant force and moment. We
+consider that this scheme is a new and interesting approach to generate
+online the trajectory for the trunk, giving so reflexes for the
+biped-walking robot.</font></p>     <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Keywords:</b>    Biped-walking robot, dynamic gait, center of pressure, zero moment point</font></p>  <hr size="1" noshade="noshade">     <p>&nbsp;</p>     <p>&nbsp;</p>     <p><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><b>Introduction</b></font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">One
+can classify the biped walking robot by its gait. There are two major
+research areas in biped walking robot: the static gait and the dynamic
+gait. When the biped walking robot is in static gait, the ground
+projection of its global center of mass (GCoM) must be in the
+foot-support area (support polygon or stability region). In this case,
+the localization of the center of pressure (CoP) is identical to the
+GCoM. Otherwise, when the GCoM leaves the support polygon, the
+biped-walking robot is in dynamic gait; but the CoP always falls within
+the foot-support area (Goswami, 1999). When the GCoM is in front of the
+CoP, the distance between themselves can provide a measure of the
+walking stability, which defines the static threshold of stability.
+Existing inertial and gravitational forces, this distance adds torques
+that cause turns around the CoP and the possible fall of the biped
+walking robot. <a href="#figura1">Figure 1</a> presents a scheme    for this problem.</font></p>     <p><a name="figura1"></a></p>     <p>&nbsp;</p>     <p align="center"><img src="scielo.php_files/10f1.gif"></p>     <p>&nbsp;</p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">According <a href="#figura1">Figure    1</a>,
+one can measure the inertial and gravitational forces for each center
+of mass of the link, relative to the inertial coordinate system.
+Resultant force <b>R</b> and moment <b>M</b> are caused because the
+interaction between the foot-support and the foot-support area, which
+are applied to the point P (CoP). In addition, one can describe the
+dynamic of the biped walking robot using a resultant force <b>F<sub>a</sub></b> and a moment <b>M<sub>a</sub></b>. Therefore,    one can guarantee the postural stability of the dynamic gait if the values of    the components <b>F<sub>a</sub>, M<sub>a</sub>, R</b> and <b>M</b> on the foot-support    area, are null. In this case, one can identify the point P as zero-moment point    (ZMP).</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The
+challenge is to endow the biped walking robot with a trunk (inverted
+pendulum) and provide a trajectory for the trunk to compensate torques
+inherent to the dynamic gait. Since the inertial and gravitational
+forces are considered, the dynamic modeling of the trunk considers the
+dynamic interaction between the legs and the trunk, establishing a
+system of non-linear equations whose input is the trajectories of the
+legs. One can design the trajectories to the legs and then determine
+the trajectory for the trunk that assures the walking stability (Li, Q.
+et al., 1992).</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Many
+papers have proposed to assure the dynamic gait for the biped-walking
+robot, discussing the walking stability, dynamic gait design and
+dynamic control. Goswami (1999) presented a stability indicator named
+FRI-point (foot-rotation indicator), which might be restricted to the
+support polygon. Nevertheless, the FRI-point can leave the support
+polygon; one can use this distance as a measure of the walking
+stability.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Typically,
+one can use the trajectories of the trunk to guarantee the walking
+stability for the biped-walking robot. In this case, one might design a
+dynamic gait for the biped-walking robot and, next, compute the
+trajectories of the trunk by considering the ZMP. One can look for this
+algorithm in Yamaguchi et al. (1993), Li et al. (1992), Kajita et al.
+(1991), Takanishi (1989) and Park et al. (1998).</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Shibata
+et al. (2000) proposed a scheme to control a biped-walking robot whose
+objective is to reduce the magnitude of the resultant force <b>R</b> and moment <b>M</b>
+by controlling the acceleration of the GCoM. He proved this scheme by
+considering a biped-walking robot with eight degree-of-freedom, without
+a trunk. Cheng et al. (1997) proposed a control system based on a
+genetic algorithm (GA) whose objective was to optimize dynamic gait of
+the biped-walking robot. The project of the control system and the gait
+generator to the biped-walking robot were formulated as an optimized
+problem, and a GA scheme was designed to solve it, using several
+criteria. Hasegawa et al. (2000) designed a hierarchical control system
+based on a GA whose objective was to optimize the consumption of
+energy, by finding a natural gait for the biped-walking robot. They
+proposed an optimized problem, with constraints to compute the
+trajectories to the legs that result in a low power consumption by the
+actuators.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The
+main objective of this work is to present and discuss some results
+obtained from the implementation of an integrated control system for a
+biped walking robot in the dynamic gait. We divided the integrated
+control system in two sub-systems: a control of the trajectories for
+the legs and the trunk, based on adaptive control system, and an
+automatic generator of trajectory (AGT) for the trunk. We designed a
+AGT by employing a neural network, which updates online the conditions
+of trajectory for the trunk, from the evolution of the gait, with the
+objective to reduce the magnitude of the resultant force <b>R</b> and moment <b>M</b>.
+We considered that the AGT scheme is a new and interesting approach to
+generate online the trajectory for the trunk, giving reflexes for the
+biped-walking robot.</font></p>      <p>&nbsp;</p>     <p><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><b>Nomenclature</b></font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><img src="scielo.php_files/10s2.gif">    = Matrix Associated to the Reference State Vector.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>A<sub>1</sub></b>    = Diagonal Matrix Associated to the <b><u>A</u></b> Matrix.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>A<sub>2</sub></b>    = Diagonal Matrix Associated to the <b><u>A</u></b> Matrix.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><u><i>B</i></u>    = Matrix Associated to the Source Vector.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">b<sup>d</sup> = Dynamic Friction.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">b<sup>s</sup>= Static Friction (Coulomb Friction).</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>C</b> = Couriolis and Centripetal Forces Vector.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>D</b> = Matrix Mass.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>e</b> = Error Vector.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">e = Length of the link, m.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>F</b> = Dissipative Force Vector.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>F<sub>a</sub></b> = Resultant Force Vector, N.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>G</b> = Gravitational Force Vector.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">g = Gravitational force, Ns<sup>2</sup>/m.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">I = Moment of Inertia, kgm<sup>2</sup>.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>M</b> = External Resultant Moment Vector, Nm.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">m = Mass of the link, kg.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>M<sub>a</sub></b> = Resultant Moment Vector, Nm.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">P = Center of Pressure.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>R</b> = Resultant Force Vector, N.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>R<sub>n</sub></b> = Normal Force Vector, N.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>R<sub>t</sub></b> = Tangential Force Vector, N.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">sgn(&#8226;) = Signal Function.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">{<i>x<sub>C</sub>    y<sub>c</sub> z<sub>c</sub></i>} = Coordinates of the Center of Mass, m.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Greek Symbols</b></font></p>      <p><font size="2" face="Symbol">x</font><font size="2" face="Verdana, Arial, Helvetica, sans-serif">    = Damping Factor.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><font face="Symbol"><b>q</b></font>    = Angular Position Vector, rad.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><font face="Symbol"><b>t</b></font>    = External Force Vector.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><font face="Symbol"><b>k</b></font>    = Gain Vector.</font></p>      <p><font size="2" face="Symbol">w</font><font size="2" face="Verdana, Arial, Helvetica, sans-serif">    = Natural Frequency, rad/s.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><font face="Symbol"><b>D</b></font>    = Resultant Generalized Force Vector between hip and trunk.</font></p>      <p><font size="2" face="Symbol">g</font><font size="2" face="Verdana, Arial, Helvetica, sans-serif">    = Small Positive Parameter.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><font face="Symbol"><b>W</b></font>    = State Vector.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><img src="scielo.php_files/10s1.gif" align="absmiddle">    = Reference State Vector.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><img src="scielo.php_files/10s3.gif" align="absmiddle">    = Parametric uncertainties about non-linear term.</font></p>      <p>&nbsp;</p>     <p><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><b>Biped Robot    Machine</b></font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">We
+conceived our prototype of the biped walking robot by using the
+Solidworks® software (Predabon, E. and Bocchese, C., 2003), whose basic
+philosophy was to elaborate a three-dimensional prototype, divided in
+subsystems properly joined to impose the restrictions of the relative
+movements. The physical parameters (mass, volume, moments of inertia,
+etc) of the prototype are calculated automatically, from the
+characteristics of the materials to be used, from the forms, geometric
+dimensions and coordinate systems.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The
+biped walking robot comprises rigid links (ankles, lower legs, upper
+legs and hip) interconnected by revolute joints, which constitute the
+legs. Solidary to the hip there is an inverted pendulum, with two
+perpendicular revolute joints that allow a three-dimensional pendulum
+movement. <a href="#figura2">Figure 2</a> illustrates the biped
+walking robot. We employed the rules of Denavit-Hartenberg to
+distribute the Cartesian coordinates systems; in this case, links and
+joints are marked in a systematic way.</font></p>     <p><a name="figura2"></a></p>     <p>&nbsp;</p>     <p align="center"><img src="scielo.php_files/10f2.gif"></p>     <p>&nbsp;</p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="http://www.scielo.br/img/revistas/jbsmse/v28n4/10t1.gif">Table    1</a>
+presents the information about the physical parameters of the model.
+The nth link has its moment of inertia computed in relation to the nth
+Cartesian system, located in the corresponding center of mass. The
+crossed moments of inertia are null.</font></p>      <p>&nbsp;</p>     <p><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><b>Dynamic Model</b></font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">We
+considered the biped walking robot as a mechanism in an open chain. By
+using the formalism of Denavit-Hartenberg to describe its kinematics
+characteristics, we derived the inverse kinematics and the dynamic
+modeling. For the dynamic modeling, the software Maple® V (Geddes et
+al. 1997) was used to implement the formularization of Newton-Euler
+(Craig, 1995), which permitted the automation of the process of
+symbolic modeling (acronym NEROBOT). The basic data necessary to use
+the program NEROBOT are the parameters of Denavit-Hartenberg, the
+moments of inertia, the mass, and the center of mass of each link.
+Therefore, the result is a dynamic model in the matrix form, given in
+Eq. (1).</font></p>     <p align="center"><img src="scielo.php_files/10x001.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">We
+considered the biped walking robot as two subsystems: the legs and the
+trunk (inverted pendulum). The interaction between the subsystems is
+caused by the generalized forces of reaction in the joint between the
+trunk and the hip (<font face="Symbol"><b>D</b></font>), which is
+caused by their relative movements. Thus, we admitted that the dynamics
+of the mounted inverted pendulum on a car in movement represents the
+main characteristics of coupling between these subsystems.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Using
+the NEROBOT, we obtained the dynamic model of the legs, presented in
+the literal form, due to the complexity and the great extension of its
+model. For simplifications we considered <b>M</b>=<b>0</b> in Eq. (1), resulting Eq. (2).</font></p>     <p align="center"><img src="scielo.php_files/10x002.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">According Shilling,    R. J. (1990), we used the followed friction term:</font></p>     <p align="center"><img src="scielo.php_files/10x003.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Equation (3) is    composed by a viscous friction b<sup>v</sup> (coefficient of viscous friction),    by a dynamic friction b<sup>d</sup> and by a static friction b<sup>s</sup> (Coulomb    friction.) Sign stand for the sign function, and <font face="Symbol">g</font>
+is a small positive parameter. If the speed of the biped-walking robot
+is reduced, the relative effects of static friction become more
+pronounced, as represented in Eq. (3). Otherwise, if the biped-walking
+machine speed increases, the viscous friction term becomes larger, in
+comparison with the other friction terms. According to Eq. (3), we
+considered the dynamic friction <img src="scielo.php_files/10s4.gif" align="absmiddle">=0.62    Ns/m, the static friction <img src="scielo.php_files/10s5.gif" align="absmiddle">=0.91    Ns/m and <font face="Symbol">g</font> = 0.2.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">By using the NEROBOT,    one can derive a dynamic model for the trunk, in which, for simplification,    we considered <b>M = 0</b> and <b>F</b> = <b>0</b> in Eq. (1), resulting Eq.    (4) and Eq. (5).</font></p>     <p align="center"><img src="scielo.php_files/10x004.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Where:</font></p>     <p align="center"><img src="scielo.php_files/10x006.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The term <img src="scielo.php_files/10s6.gif" align="absmiddle">    of the Eq. (4) is an acceleration of the link <b>e<sub>5</sub></b>,
+with respect to the inertial frame SC0. The dynamic of the legs of the
+biped-walking robot is considered on the left side of Eq. (4); and the
+generalized force of reaction vector is considered on the right side.
+We considered the generalized forces of reaction vector as disturbances
+to the movement of the biped walking robot.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Similarly,
+the terms on the left and the right side of the Eq. (5) are related to
+the dynamic of the inverted pendulum and to the generalized forces of
+reaction vector (which is considered a disturbance to the movement of
+the inverted pendulum), respectively. Therefore, Eq. (4) and Eq. (5)
+show the influences of the movements of the dynamic legs in the
+movement of the inverted pendulum and vice-versa.</font></p>      <p>&nbsp;</p>     <p><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><b>Integrated Control    System</b></font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The
+integrated control system is considered by two subsystem controls: the
+first, which uses feedback linearization and adaptive control approach
+and, the second, which is an automatic generator of trajectories for
+the trunk. Similarly, to the control of the trajectories of the legs,
+one can control the trajectories of the trunk by employing the computed
+torque technique (Craig, 1995) whose control law contains the terms of
+the nominal model of the robot, the reference model and the
+uncertainties. Neural networks using radial basis functions (RBF)
+provide the on-line identification of the uncertainties. The automatic
+generator of the trajectories for the trunk uses a recurrent neural
+network (RNN) that manipulates the positions and velocities of the legs
+to compute the positions for the trunk, based on the zero moment point
+(ZMP) criterion. <a href="#figura3">Figure 3</a> illustrates the proposed    scheme for the integrated control system.</font></p>     <p><a name="figura3"></a></p>     <p>&nbsp;</p>     <p align="center"><img src="scielo.php_files/10f3.gif"></p>     <p>&nbsp;</p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Feedback Linearization and the Adaptive Control Approach</b></font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><i><b>Project of    the Reference Model</b></i></font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">One
+can consider a second-order reference model, whose locations of the
+poles in the complex plan agree with the project specifications, so
+that the servomechanism simulates the analogous behavior of the
+standard second-order systems (Ge et. al. 1998). This control technique
+is similar to the supervised learning. The reference model provides the
+desired patterns (targets) for the input (references trajectories). To
+adjust the parameters of the compensator and of the model of the plant
+is used the error between the desired patterns and the measured
+variables.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">By
+considering a second-order model for each degree of freedom, Eq. (11)
+represents the reference model in the state space form.</font></p>     <p align="center"><img src="scielo.php_files/10x011.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Where:</font></p>     <p align="center"><img src="scielo.php_files/10x012.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Diagonal matrix    with <i>n</i> products between <font face="Symbol">z</font> (damping factor)    e <font face="Symbol">w</font> (natural frequency)</font></p>     <p align="center"><img src="scielo.php_files/10x016.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Diagonal Matrix    with <i>n</i> natural frequency (<font face="Symbol">w</font>), rad/s;</font></p>     <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><i><b>Project of    the Adaptive Control System</b></i></font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Equation
+(17) represents a biped walking robot in the state space form. One can
+suppress the dependence of the angular variable to simplify the
+notation.</font></p>     <p align="center"><img src="scielo.php_files/10x017.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Where:</font></p>     <p align="center"><img src="scielo.php_files/10x018.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Matrix associated    to the state vector, <font face="Symbol">Î</font> <font face="Symbol">Â</font><sup>2n<font face="Symbol">´</font>2n</sup></font></p>     <p align="center"><img src="scielo.php_files/10x019.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">By
+admitting that the uncertainties are null, Equation (22) defines a
+control law that includes terms of the dynamic model of the robot and
+the reference model.</font></p>     <p align="center"><img src="scielo.php_files/10x022.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Using Eq. (16)    into (21) results:</font></p>     <p align="center"><img src="scielo.php_files/10x023.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Equation (23) describes    a linear, stable and not-connected model. One can define the error of tracking    e<font face="Symbol">ºW</font>-<img src="scielo.php_files/10s1.gif" align="absmiddle">    as the difference between Eq. (23) and Eq. (11), which results:</font></p>     <p align="center"><img src="scielo.php_files/10x024.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">By
+analyzing Eq. (24), one can guarantee the asymptotic tracking by an
+adequate choice of the matrix associated to the state vector for the
+reference model. However, it is necessary the full knowledge of the
+dynamics of the plant to be controlled in order to make it possible to
+cancel the nonlinear effect of the model.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><i><b>Inclusion    of the Parametric Uncertainties</b></i></font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The
+full knowledge about a dynamic model is not possible in the practical
+application. Thus, we admitted the parametric uncertainties related to
+Eq. (21), which does not allow the exact cancellation of this term. One
+can define <font face="Symbol"><b>t</b></font><sub><b>M</b></sub>,    the term based on the model, and <font face="Symbol"><b>t</b></font><sub><b>R</b></sub>,
+the robust term. Thus, according Ge, et al. (1998) Eq. (22) can be
+changed by Eq. (25), which presents an estimated of the Eq. (20).</font></p>     <p align="center"><img src="scielo.php_files/10x025.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Where:</font></p>     <p><font size="2" face="Symbol">k</font><font size="2" face="Verdana, Arial, Helvetica, sans-serif">    Gain vector;</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">sgn(&#8226;) Signal    function;</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">e Error of the    model</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Using Eq. (17)    into Eq. (25), one can write:</font></p>     <p align="center"><img src="scielo.php_files/10x026.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The difference    between Eq. (27) and Eq. (11) results:</font></p>     <p align="center"><img src="scielo.php_files/10x028.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Analyzing Eq. (28),    we conclude that the objective of the <font face="Symbol"><b>t</b></font><sub><b>R</b></sub>    term is to suppress the error in the process of identification of the estimated    term <img src="scielo.php_files/10s3.gif" align="absmiddle">.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Equation (29) can    give the estimated term vector <img src="scielo.php_files/10s3.gif" align="absmiddle">.
+In this context, neural network is an interesting way to emulate the
+unknown terms. In special, we employed a radial base function (RBF)
+neural network because one can adaptively adjust their weights based on
+the Lyapunov stability theory, when the radial base function vector is
+considered fixed (Ge et. al. 1998.) In this paper, we employed for each
+neuron of the RFB network the inverse Hardy's multiquadric.</font></p>     <p align="center"><img src="scielo.php_files/10x029.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Where the k-th    component is:</font></p>     <p align="center"><img src="scielo.php_files/10x030.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">According to GE    <i>et al</i>. (1998), one can rewrite Eq. (28) with Eq. (29) to assure the stability    in the Lyapunov sense.</font></p>     <p align="center"><img src="scielo.php_files/10x031.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">In addition, one    can consider the following Lyapunov function:</font></p>     <p align="center"><img src="scielo.php_files/10x032.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Where:</font></p>      <p align="center"><img src="scielo.php_files/10x033.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Taking the time    derivative of the Eq. (32) and using Eq. (31) results:</font></p>     <p align="center"><img src="scielo.php_files/10x035.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">According to Eq.    (35), one can choose Eq. (36) as an adaptability law for the parameters of the    RBF net.</font></p>     <p align="center"><img src="scielo.php_files/10x036.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Using Eq. (35)    into Eq. (36) results:</font></p>     <p align="center"><img src="scielo.php_files/10x037.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Using Eq. (30)    and Eq. (33) to rewrite Eq. (37) results:</font></p>     <p align="center"><img src="scielo.php_files/10x038.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The matrixes <b><i>P</i></b>    and <b><i>B</i></b> are definite positive and <b><i>D</i></b> is a non-singular    matrix. One can assure the stability in closed loop by choosing the components    of matrix <b><i>k</i></b> according to Eq. (39).</font></p>     <p align="center"><img src="scielo.php_files/10x039.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Therefore, Eq.    (38) is definite negative:</font></p>     <p align="center"><img src="scielo.php_files/10x040.gif"></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>The Automatic Generator Trajectories of the Trunk</b></font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Commonly,
+to compensate the inertial and gravitational forces intrinsic to the
+dynamic gait, one can endow the biped walking robot with a trunk
+(inverted pendulum). However, this addition causes inherent problems to
+the stability. First, we must to keep the trunk under control in the
+vertical position; we solved this problem by employing a servomechanism
+as showed in section 4.1. The generation of trajectory of the trunk
+that can assure postural stability is the second problem. It is worthy
+to consider the dynamic of the contact between the support foot and the
+ground. The ZMP criterion can provide a system of nonlinear dynamic
+equations to obtain the trajectories of the trunk (Takanishi, 1989).</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Gonçalves
+and Zampieri (2003) addressed the second problem by employing a
+recurrent neural network (RNN) to generate the trajectories of the
+trunk in the automatic form, based on the ZMP criterion. They designed
+an identification scheme to obtain the parameters vector of the RNN,
+utilizing a first-order standard back-propagation with momentum. This
+way, a compensative trunk motion makes the actual ZMP get closer to the
+planned ZMP.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Here,
+we utilized the same scheme, using an RNN with 2 intermediate layers,
+and 20 neurons in each layer. The stop criterion was <b>0.0001</b> m that is the mean-square error between the actual ZMP and the planned ZMP.</font></p>      <p>&nbsp;</p>     <p><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><b>Simulations    and Results</b></font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">We
+considered the biped walking robot as two subsystems: trunk (inverted
+pendulum) and the legs. Equations (2), (4) and (5) define the dynamic
+model of the biped walking robot. We implemented this model in
+Matlab/Simulink®, by using the S-functions (Harman, T. L. and Dabney,
+J. B., 2003.) <a href="#figura4">Figure 4</a> illustrates the
+disturbances caused by the trunk in the legs (Right Side of Eq. 4) and
+vice versa (Right Side of Eq. 5). The connection named "u-trunk"
+receives the trajectories of the trunk from the generator of
+trajectories for the trunk. The connection "u-legs" receives the
+planned gait from the gait automatic generator.</font></p>     <p><a name="figura4"></a></p>     <p>&nbsp;</p>     <p align="center"><img src="scielo.php_files/10f4.gif"></p>     <p>&nbsp;</p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#figura5">Figure    5</a>
+illustrates the integrated control system for the biped walking robot.
+The block "Biped Robot's Model" contains the models of the subsystems
+and the disturbances. The adaptive control systems for the trunk and
+for the legs, in despite of independent, are similar. The automatic
+generator of trajectories for the trunk receives the angular signals of
+position and acceleration from the gait generator and the trunk, to
+compose the input signals to the RNN.</font></p>     <p><a name="figura5"></a></p>     <p>&nbsp;</p>     <p align="center"><img src="scielo.php_files/10f5.gif"></p>     <p>&nbsp;</p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">For
+the simulation, we utilized a dynamic gait with the following
+characteristics: the pelvis remains parallel in relation to the ground;
+the step length is <b>0.17</b> m; the speed walking is <b>0.55</b> m/s; the angle between the foot and the ground is <b>0.2</b> rad; and the maximum height for the balancing foot is <b>0.0386</b> m. The total time to complete a step is <b>0.3</b> s. We considered that twenty percent of the total time is time expended in the bi-support phase.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">For
+this gait characteristic, we computed the angular positions by using
+inverse kinematics techniques, and the speeds, by employing Jacobian
+computation.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#figura5">Figure    5</a> and <a href="#figura6">Fig. 6</a> show the results of the simulation,    which describe the angular and the velocity trajectories for the first (<font face="Symbol">q</font><sub>1</sub>),    second (<font face="Symbol">q</font><sub>2</sub>), third (<font face="Symbol">q</font><sub>3</sub>)    joints, and so on.</font></p>     <p><a name="figura6"></a></p>     <p>&nbsp;</p>     <p align="center"><img src="scielo.php_files/10f6.gif"></p>     <p>&nbsp;</p>     <p><a name="figura7"></a></p>     <p>&nbsp;</p>     <p align="center"><img src="scielo.php_files/10f7.gif"></p>     <p>&nbsp;</p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#figura8">Figure    8</a>
+shows the trajectories for the angular position and the velocity of the
+trunk that were used for the reference of the trunk. The RNN decides
+the problem of the angular positioning of the trunk and the angular
+velocities of the trunk are decided from the reference model.</font></p>     <p><a name="figura8"></a></p>     <p>&nbsp;</p>     <p align="center"><img src="scielo.php_files/10f8.gif"></p>     <p>&nbsp;</p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#figura9">Figure    9</a> shows the tracking errors obtained from the control system of the trunk.    The angular position error is around ± <b>1.5<font face="Symbol">´</font>10<sup>-3</sup></b>    rad and presents a decreasing oscillatory behavior. The corresponding angular    speeds present similar behavior.</font></p>     <p><a name="figura9"></a></p>     <p>&nbsp;</p>     <p align="center"><img src="scielo.php_files/10f9.gif"></p>     <p>&nbsp;</p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="#figura10">Figures    10</a> and <a href="#figura11">11</a> present the corresponding errors <img src="scielo.php_files/10s7.gif" align="absmiddle">
+of the tracking of the position and of the velocities associates to the
+legs, respectively. The angular position errors are limited around <b>0.06</b> rad    in the beginning of the movement, reaching around <b>0.02</b> rad in approximately    <b>0.1</b> s and around <b>zero</b> rad after <b>0.2</b> s (with exception of    the balancing leg). Similar behavior is verified for the corresponding velocity    errors.</font></p>      <p><a name="figura10"></a></p>     <p>&nbsp;</p>     <p align="center"><img src="scielo.php_files/10f10.gif"></p>     <p>&nbsp;</p>     <p><a name="figura11"></a></p>     <p>&nbsp;</p>     <p align="center"><img src="scielo.php_files/10f11.gif"></p>     <p>&nbsp;</p>     <p><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><b>Conclusions    and Comments</b></font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">This
+work aimed at contributing to the area of biped walking robots that
+explore the dynamic gait. We designed a biped walking robot endowed
+with trunk, composed by a chain of rigid links interconnected by
+rotating joints, totalizing twelve joints that enable positioning in
+the three-dimensional space. For the symbolic modeling, we implemented
+the formalism of Newton-Euler in the environment of the Maple®,
+offering an automatic symbolic modeler.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">We
+projected and implemented the integrated adaptive control system. The
+control law includes terms of the dynamic model of the robot, of the
+reference model and of the uncertainties. We employed an RBF neural
+network for the on-line identification of the parametric uncertainties;
+and, we design and implement an automatic gait generator, adaptable to
+the local conditions of the land, functioning perfectly in terms of
+passage speed, length of the step and maximum height for the foot in
+balance. After planning the gait, was determined the trajectory for the
+trunk by a RNN, integrated to the control system, which could update
+online the angular positioning of the trunk from the evolution of the
+legs. The system of control and the automatic generator of trajectories
+for the trunk constituted the adaptive mechanisms, developed to solve
+the dynamic gait control.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">In
+the simulation, we synthesized a gait for the robot with requirements
+similar to those of the human being gait, with a walking speed of <b>2</b>
+km/h. By using the inverse kinematics computation, was computed the
+corresponding angular position. The angular speeds were computed by
+using Jacobian matrix, as show in <a href="#figura6">Fig.    6</a> and <a href="#figura7">Fig. 7</a>.</font></p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">The
+integrated control system presents a steady behavior and, besides
+tracking signals of reference for the legs and for the trunk, allows
+rejecting the disturbances caused by the coupling between the legs and
+trunk.</font></p>      <p>&nbsp;</p>     <p><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><b>References</b></font></p>      <!-- ref --><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Cheng,
+M.-Y. and Lin, C.-S. Genetic Algorithm for control design of biped
+locomotion. Journal of robotic system 14(5), 365-373 (1997).</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000001&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --><!-- ref --></p><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Craig, John J. Introduction to robotics: mechanics and control. Addison-Wesley Longman. 2nd ed, 1995. 450 p.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000002&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --><!-- ref --></p><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Ge,
+S. S., Lee, T. H. and Harris, C. J., 1998, "Adaptive Neural Networks
+Control of Robotic Manipulator." World Scientific Series in Robotics
+and Intelligent Systems, Vol. 19, 381 p.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000003&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --><!-- ref --></p><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Geddes, K., Monagan, M. B. and Springer-Velarg, 1997, "Maple V Programming Guide." Ed. Springer-Verlag NY. 379p.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000004&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --><!-- ref --></p><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Gonçalves,
+J. B. and Zampieri, D. E., 2003, "Recurrent Neural Network Approaches
+for Biped Walking Robot based on Zero-Moment-Point Criterion." RBCM -
+J. of. the Brazilian Soc. Mechanical Sciences, Vol. XXV. pp 53-62.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000005&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --><!-- ref --></p><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Goswami,
+A., 1999, "Postural Stability of Biped Robots and the Foot-Rotation
+Indicator (FRI) Point". The International Journal of Robotics Research,
+Vol. 18, No. 6, pp. 523-533.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000006&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --><!-- ref --></p><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Harman, T. and Dabney, J. B., 2003, "Mastering Simulink". Ed. Prentice-Hall. 400 p.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000007&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --><!-- ref --></p><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Hasegawa,
+Y., Arakawa, T., and Fukuda, T. Trajectory generation for biped
+locomotion robot. Mechatronics 10 (2000) 67-89. Elsevier Science Ltd.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000008&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --><!-- ref --></p><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Kajita,
+S., and Tani, K. Study of dynamic biped locomotion on rugged terrain:
+Derivation and application of the linear inverted pendulum mode.
+Proceedings of the IEEE International Conference on Robotics and
+Automation. Sacramento, CA. pp. 1405-1411, 1991.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000009&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --><!-- ref --></p><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Li,
+Q., Takanishi, A., and Kato, I., 1992, "Learning Control of
+Compensative Trunk Motion for Biped Walking Robot based on ZMP
+criterion." In Proceedings of the 1992, IEEE/RSJ International
+Conference on Intelligent Robots and System. Raleigh, NC.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000010&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --><!-- ref --></p><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Park,
+J. H., and Kim K. D. Biped robot walking using gravity-compensated
+inverted pendulum mode and computed torque control. Proceedings of the
+IEEE International Conference on Robotics and Automation. Lueven,
+Belgium. 1998.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000011&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --><!-- ref --></p><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Predabon, E. and Bocchese, C., 2003, "SolidWorks 2004 &#8211; Projeto e Desenvolvimento". Ed. Érica. 408 p.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000012&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --><!-- ref --></p><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Shibata,
+M., and Natori, T. Impact Force Reduction for Biped Robot Based on
+Decoupling COG Control Scheme. IEEE AMC. Nagoya. 2000.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000013&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --><!-- ref --></p><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Shilling, R. J., 1990, "Fundamental of Robotics Analysis and Control", Prentice Hall, 425 p.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000014&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --><!-- ref --></p><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Takanishi, A., 1989, "Robot Biped Walking Stabilized with Trunk Motion." Proceedings of ARW on Robotics and Biological System.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000015&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --><!-- ref --></p><p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Yamaguchi,
+Jin-ichi, Takanishi, A., and Kato, I. Development of a biped walking
+robot compensating for three-axis moment by trunk motion. Proceedings
+of the 1993 IEEE/RSJ International Conference on Intelligent Robots and
+Systems, Yokohama, Japan. July, 26-30, 1993.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<a href="javascript:void(0);" onclick="javascript: window.open('/scieloOrg/php/reflinks.php?refpid=S1678-5878200600040001000016&amp;pid=S1678-58782006000400010&amp;lng=en','','width=640,height=500,resizable=yes,scrollbars=1,menubar=yes,');">Links</a>&nbsp;]<!-- end-ref --></p><p>&nbsp;</p>     <p>&nbsp;</p>     <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Paper accepted:    June, 2005.</font></p>     <p>&nbsp;</p>     <p>&nbsp;</p>      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Presented
+at XI DINAME &#8211; International Symposium on Dynamic Problems of
+Mechanics, February 28th - March 4th, 2005, Ouro Preto. MG. Brazil. <br>   </font><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Technical    Editors: J.R.F. Arruda and D.A. Rade.</font></p>       <div align="left"></div><div class="spacer">&nbsp;</div></div><div xmlns="" class="footer"><font class="normal">©&nbsp;</font><font class="negrito" color="#000080"><i>2008&nbsp;
+    						The Brazilian Society of Mechanical Sciences and Engineering<br></i></font><br><font class="negrito" color="#000080">Av. Rio Branco, 124 - 14. Andar<br>20040-001 Rio de Janeiro RJ - Brazil<br>Tel.: +55 21 2221-0438<br>Fax: +55 21 2509-7129<br></font><br><br><img src="scielo.php_files/e-mailt.gif" border="0"><br><a class="email" href="mailto:abcm@domain.com.br">abcm@domain.com.br</a><img src="scielo.php_files/updateLog02.htm" border="0" width="1" height="1"><script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+				</script><script src="scielo.php_files/ga.js" type="text/javascript"></script><script type="text/javascript">
+				var pageTracker = _gat._getTracker("UA-604844-1");
+				pageTracker._initData();
+				pageTracker._trackPageview();
+			</script></div></div><!--transformed by JAVA 03:12:45 01-12-2008-->
+<!--CACHE MSG: CACHE NAO FOI UTILIZADO -->
+<!-- REQUEST URI: /scielo.php?pid=S1678-58782006000400010&script=sci_arttext-->
+<!--SERVER:192.168.1.31--></body></html>
